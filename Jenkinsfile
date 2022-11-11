@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage ("Inicio") {
 			steps {
-				sh 'mvn clean package -DskipTests=True'
+				sh '/opt/maven/bin/mvn clean package -DskipTests=True'
 			}
 		}
 	}
