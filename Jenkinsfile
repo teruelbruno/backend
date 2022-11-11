@@ -11,10 +11,11 @@ pipeline {
 				sh "echo Meio"
 			}
 		}
-		stage ("Fim")
+		stage ("Fim") {
 			steps {
 				sleep(5)
 				sh "echo Fim!"
 		}
 	}
+}
 }
