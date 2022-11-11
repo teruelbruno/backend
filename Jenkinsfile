@@ -3,19 +3,8 @@ pipeline {
 	stages {
 		stage ("Inicio") {
 			steps {
-				sh "echo inicio"
+				sh 'mvn clean package -DskipTests=True'
 			}
-		}
-		stage ("Meio") {
-			steps {
-				sh "echo Meio"
-			}
-		}
-		stage ("Fim") {
-			steps {
-				sleep(5)
-				sh "echo Fim!"
 		}
 	}
-}
 }
